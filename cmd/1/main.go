@@ -7,7 +7,7 @@ import (
 
 	"github.com/samber/lo"
 	"github.com/samber/lo/mutable"
-	lib "github.com/thebenkogan/Advent-Of-Code-2015"
+	lib "github.com/thebenkogan/Codyssi-2025"
 )
 
 func main() {

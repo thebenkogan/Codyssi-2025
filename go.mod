@@ -1,4 +1,4 @@
-module github.com/thebenkogan/Advent-Of-Code-2015
+module github.com/thebenkogan/Codyssi-2025
 
 go 1.22.3
 
