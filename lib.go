@@ -2,6 +2,7 @@ package lib
 
 import (
 	"fmt"
+	"math"
 	"os"
 	"regexp"
 	"strconv"
@@ -37,8 +38,16 @@ type Vector struct {
 	X, Y int
 }
 
-func (v *Vector) Hash() string {
+func (v Vector) Hash() string {
 	return fmt.Sprintf("%d,%d", v.X, v.Y)
+}
+
+func (v Vector) ManhattanDist(other Vector) int {
+	return int(math.Abs(float64(v.X-other.X)) + math.Abs(float64(v.Y-other.Y)))
+}
+
+func (v Vector) Equals(other Vector) bool {
+	return v.X == other.X && v.Y == other.Y
 }
 
 var DIRS = []Vector{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
