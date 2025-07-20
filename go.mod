@@ -7,4 +7,8 @@ require (
 	github.com/zyedidia/generic v1.2.1
 )
 
-require golang.org/x/text v0.22.0 // indirect
+require (
+	github.com/segmentio/fasthash v1.0.3 // indirect
+	golang.org/x/exp v0.0.0-20220218215828-6cf2b201936e // indirect
+	golang.org/x/text v0.22.0 // indirect
+)
